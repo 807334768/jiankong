@@ -1,0 +1,5 @@
+
+<!--pages/test/test.wxml-->
+  <map id="map" longitude="{{121.407837}}" latitude="{{31.171854}}" scale="14" markers="{{markers}}"  class='mapView' polyline='{{polyline}}' show-location='{{true}}' subkey="YDYBZ-QBSRX-M4X4R-Z6JWA-YECKH-GQFCY">
+  </map>
+  <cover-view class='btn' bindtap='moveMarker'>开始测试</cover-view>

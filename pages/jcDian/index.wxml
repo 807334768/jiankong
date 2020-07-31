@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view>
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <!-- 首页 -->
+      <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image> 
+    </view>
+  </view>
+     <!-- <view class='hidden'> -->
+<view class="main">
+				<view class="top">
+    <text class="loc">裕华区建设南大街监测点</text>
+    <text class='time'>更新于 上午10:00 </text>
+		<view class="centerCon">
+		 <view class='levelImg'>
+      <view>TSP</view>
+      <view>123</view>
+      <view>一级</view>
+    </view>
+		</view>
+   
+</view>
+	<!-- <ec-canvas id="mychart-dom-gauge2" canvas-id="mychart-gauge2" ec="{{ ec2 }}"></ec-canvas> -->
+	<view class="items">
+		<view>
+			45
+			<view>PM2.5</view>
+		</view>
+    <view>
+			150
+			<view>PM10</view>
+		</view>
+    <view>
+			4.1m/s
+			<view>风速</view>
+		</view>
+    <view>
+			东南
+			<view>风向</view>
+		</view>
+    <view>
+			3级
+			<view>风力</view>
+		</view>
+	</view>
+  <view class='canvasCon'>
+  	<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+  </view>
+		<!-- </view>	 -->
+ 
+</view>
+
+</view>

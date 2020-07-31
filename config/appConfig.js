@@ -1,0 +1,9 @@
+export const CDN_PATH = 'https://3gimg.qq.com/lightmap/xcx/demoCenter/images';
+export const PLUGIN_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const MOYUAN_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const BAIQIAN_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const YULU_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const DIFUNI_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const INDOOR_KEY = '7ORBZ-XNOCX-ZGV4P-TNDLX-OSEPO-XSFLZ';
+export const REFERER = '腾讯位置服务示例中心小程序';
+export const WEBSERVICE_APPID = 'wxcaed22deecd14de8';

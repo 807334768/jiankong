@@ -1,0 +1,6 @@
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      首页
+      <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image> 
+    </view>
+  </view>

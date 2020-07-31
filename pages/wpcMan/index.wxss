@@ -1,0 +1,88 @@
+.container{
+  width: 690rpx;
+  height: 150rpx;
+  border:1rpx solid #ccc;
+  border-radius:20rpx;
+  margin: auto;
+  margin-bottom: 20rpx;
+  margin-top:20rpx;
+  position: relative;
+}
+.car{
+  width: 80rpx;
+  height:80rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:20rpx;
+  margin: auto;
+}
+.carNo{
+  position: absolute;
+  top: 40rpx;
+  bottom: 0;
+  left:120rpx;
+ 
+  font-size: 36rpx;
+}
+.carTime{
+  position: absolute;
+  top: 95rpx;
+  bottom: 0;
+  left:120rpx;
+ 
+  font-size: 30rpx;
+  color: #ccc;
+}
+.carState{
+  position: absolute;
+  top: 10rpx;
+  bottom: 0;
+  right:20rpx;
+  font-size: 30rpx;
+}
+.carState2{
+  color:green;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin:auto;
+  background: rgba(0,0,0,.5);
+}
+.addContainer{
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  margin:auto;
+  width: 580rpx;
+  height: 400rpx;
+  margin:auto;
+  background:#fff;
+  border-radius: 20rpx;
+  text-align:center;
+}
+.title{
+  font-size:36rpx;
+  margin-top:40rpx;
+  padding-bottom:60rpx;
+}
+.addContainer input{
+  border-bottom:1px solid #ccc;
+  height:40rpx;
+  line-height: 40rpx;
+  width: 80%;
+  margin:auto;
+  margin-bottom:30rpx;
+  text-align: left;
+}
+.ml20{
+  margin-left:20rpx;
+}

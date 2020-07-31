@@ -1,0 +1,28 @@
+<view class="page-body">
+	<view class="page-section">
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell weui-cell_input">
+				<label class="contentInput">
+					检测点名称
+					<input class="input" auto-focus placeholder="自定义检测点名称" />
+				</label>
+				<label class="contentInput">
+					安装位置
+					<input class="input" auto-focus placeholder="自定义位置名称" />
+				</label>
+				<label class="contentInput">
+					经纬度
+			    <text class="textRight"> {{loca}}</text>
+					<image class="icon" bindtap="selectLocation" src="../../img/marker_yellow.png" ></image>
+				</label>
+				<label class="contentInput">
+					检测设备
+					<input class="input" auto-focus placeholder="自定义位置名称" />
+				</label>
+			</view>
+		</view>
+	</view>
+	<map id="myMap" 	latitude="{{location.latitude}}"
+	 	longitude="{{location.longitude}}" 		markers="{{markers}}"		bindtap="onTapMap" show-location />
+		    <button type="primary" >保存</button>
+</view>

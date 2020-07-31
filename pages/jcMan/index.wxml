@@ -1,0 +1,30 @@
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <!-- 首页 -->
+      <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image> 
+    </view>
+  </view>
+<view class="main" style='padding-top:{{navH}}px'>
+ <map
+				class="map"
+				id="map"
+				latitude="{{location.latitude}}"
+				longitude="{{location.longitude}}"
+				markers="{{markers}}"
+				scale="16"
+				bindregionchange="onChangeRegion"
+				bindtap="onTapMap"
+				bindpoitap="onTapPoi"
+				bindmarkertap="onTapMarker"
+			>
+      </map>
+			
+</view>
+ <view class='add'>
+  <navigator url="../jcAdd/index"  >新增</navigator></view>
+<view class="" wx:for="{{jsList}}" wx:for-item='item' wx:key="item">
+  {{item.name}} 
+ {{item.loc}} 
+  {{item.val}} {{item.level}} 
+</view>
+ 

@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<image src="../../img/bg.jpg" class="bg"></image>
+
+<view>
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      <!-- 首页 -->
+      <!-- <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image>  -->
+    </view>
+  </view>
+  <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y >
+    <view class='hidden'>
+      <view class='loginCon' wx:if='{{show}}'>
+        <view class="title">欢迎登陆</view>
+      <image class='photo' src='{{avatarUrl}}'></image>
+        <form bindsubmit="submit">
+          <text class='inputName'>昵称</text>
+          <input name="name"   bindinput="changeName" model:value="{{name}}" class="inp"/>
+          <text  class='inputName'>密码</text>
+          <input name="name"     model:value="{{pwd}}" type='password'  class="inp"/>
+          <button class="btn" bindtap="toLogin">登录</button>
+          </form>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<!-- <view class='loginCon' wx:if='{{show}}'>
+  <view class="title">欢迎登陆</view>
+<image class='photo' src='{{avatarUrl}}'></image>
+  <form bindsubmit="submit">
+    <text class='inputName'>昵称</text>
+    <input name="name"   bindinput="changeName" model:value="{{name}}" class="inp"/>
+    <text  class='inputName'>手机号</text>
+    <input name="name"  open-type="getPhoneNumber"  bindgetphonenumber="getPhoneNumber"   model:value="{{pwd}}" type='password'  class="inp"/>
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" class="getNum">获取手机号</button>
+    <button class="btn" bindtap="toLogin">登录</button>
+    
+    </form>
+</view> -->

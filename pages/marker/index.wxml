@@ -1,0 +1,60 @@
+<!--pages/map/event/event.wxml-->
+<view>
+  <view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+      首页
+      <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image> 
+    </view>
+  </view>
+  <scroll-view class='bg-gray overflow' style='height:calc(100vh - {{navH}}px)' scroll-y >
+    <view class='hidden'>
+      <!-- 正文 --> 
+
+
+<view class="map-event-container">
+  <view class="map-event-content">
+    <!-- <view class="introduce plr20">此示例展示地图触发事件回调效果，支持地图点击、标注点击、气泡点击、控件点击、地图渲染更新、视野变化、POI点击等回调。</view> -->
+    <view class="map-container plr20">
+			<map
+				class="map"
+				id="map"
+				latitude="{{location.latitude}}"
+				longitude="{{location.longitude}}"
+				markers="{{markers}}"
+				scale="16"
+				bindregionchange="onChangeRegion"
+				bindtap="onTapMap"
+				bindpoitap="onTapPoi"
+				bindmarkertap="onTapMarker"
+			>
+      </map>
+    </view>
+    <view class="dotNav">
+    <text>.</text>
+    <text>.</text>
+    <text>.</text>
+    </view>
+     <view class="navBtn">
+     <navigator url="../wpcMan/index"  >wpcMan</navigator>
+      <navigator url="../jcMan/index"  >jcMan</navigator>
+    </view>
+    <view class="feature-container pl20">
+      <view class="feature-content  border-bottom">
+      
+      </view>
+     
+    </view>
+  </view>
+</view>
+
+    </view>
+  </scroll-view>
+</view>
+  <!-- <text class="feature-label">地图点击回调---</text> -->
+        <!-- <text class="feature-txt">{{mapCallbackTxt}}</text> -->
+
+         <!-- <view class="feature-content  border-bottom"> -->
+        <!-- <text class="feature-label">标注点击回调=---</text> -->
+        <!-- <text class="feature-txt">{{markerCallbackTxt}}</text> -->
+      <!-- </view> -->
+      

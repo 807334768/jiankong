@@ -1,0 +1,23 @@
+ 
+   .contentInput{
+     display: flex;
+     justify-content: space-between;
+     border-bottom:1rpx solid #ccc;
+     margin-bottom: 20rpx;
+     height: 80rpx;
+     line-height: 80rpx;
+   }
+   .input{
+     width:484rpx;
+     display: inline;
+     text-align:right;
+
+   }
+   .icon{
+     width:60rpx;
+     height:60rpx;
+   }
+   .textRight{
+     text-align: right;
+     width: 571rpx;
+   }

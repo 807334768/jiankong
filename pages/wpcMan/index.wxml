@@ -1,0 +1,37 @@
+<!-- index.wxml -->
+
+<view class='nav bg-white' style='height:{{navH}}px'>
+    <view class='nav-title'>
+     
+      <image src='../../img/back.png' mode='aspectFit' class='back' bindtap='navBack'></image> 
+    </view>
+  </view>
+
+
+<view class="main" style='padding-top:{{navH}}px'>
+<view class="container" wx:if='{{lists.length>0}}' wx:for="{{lists}}" wx:for-item='item' wx:key="item">
+ <navigator url="../guiji/index?id={{item.id}}">	
+ <image class='car' src="../../img/marker_red.png"></image>
+	<text class="carNo">{{item.carNo}}</text>
+	<text class="carTime">最近一次喷洒：{{item.time}}</text>
+	<text class='carState'  wx:if='{{item.carState==1}}'>停靠中</text>
+	<text class='carState carState2'  wx:if='{{item.carState==2}}'>喷洒中</text>
+	</navigator>
+</view>
+<view wx:if='{{lists.length<=0}}'> 无记录 </view>
+<button type="primary" bindtap="addCar">新增</button>
+<view class="cover" wx:if='{{show}}'>
+	<view class="addContainer">
+		<view class="title">新增</view>
+		<label class="contentInput">
+			<input class="input" auto-focus model:value='{{carNo}}' placeholder="车牌号" />
+		</label>
+		<label class="contentInput">
+			<input class="input"  model:value='{{carEqu}}' placeholder="定位设备" />
+		</label>
+		<button class="mini-btn" type="primary" size="mini" bindtap="saveCar">保存</button>
+		<button class="mini-btn ml20" type="default" size="mini" bindtap="cancelCar">取消</button>
+
+	</view>
+</view>
+</view>
